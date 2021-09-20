@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // import mongoose from "mongoose"; //에러 발생
 
-let url = "mongodb+srv://dbadm:" + encodeURIComponent("wish197***") + "@cl.lc08w.mongodb.net/db";
+let url = "mongodb+srv://dbadm:" + encodeURIComponent("wish197***") + "@cl.lc08w.mongodb.net/db?retryWrites=true&w=majority";
 mongoose.connect(url, { dbName: 'db' }, function(err) {
     console.log('err ::' + err);
 });
